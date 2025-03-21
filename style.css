@@ -4,3 +4,37 @@ body {
   padding: 0;
   margin: 0;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20vw;
+}
+
+#photo-container {
+  position: relative;
+}
+
+#photo-container > img {
+  max-width: 400px;
+}
+
+#photo-container > h2 {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: white;
+}
+
+header > aside {
+  background-color: white;
+  padding: 18px;
+  box-shadow: 5px 8px 5px -6px #000000;
+}
+
+@media (max-width: 300px) {
+  #photo-container > img {
+    max-width: 250px;
+  }
+}
