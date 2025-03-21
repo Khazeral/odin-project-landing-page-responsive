@@ -1,41 +1,270 @@
-*,
-html,
-body {
-  padding: 0;
+/* Base Styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #3a9bbd;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 70%);
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Profile Section */
+.profile-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20vw;
-}
-
-#photo-container {
+  flex-wrap: wrap;
+  margin-bottom: 80px;
   position: relative;
 }
 
-#photo-container > img {
-  max-width: 350px;
-  max-height: 300px;
+.profile-image-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-right: -50px;
+  z-index: 1;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#photo-container > h2 {
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
   position: absolute;
-  bottom: 0;
-  text-align: center;
+  bottom: 20px;
+  left: 20px;
   color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-header > aside {
+.about-container {
+  flex: 1;
+  min-width: 300px;
   background-color: white;
-  padding: 64px 24px;
-  box-shadow: 5px 8px 5px -6px #000000;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  position: relative;
 }
 
-@media (max-width: 300px) {
-  #photo-container > img {
-    max-width: 250px;
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.about-text {
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.social-links {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.social-icon {
+  color: #333;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #3a9bbd;
+}
+
+/* Work Section */
+.work-section {
+  margin-top: 50px;
+}
+
+.work-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.project-image-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.red {
+  background-color: #a83232;
+}
+
+.purple {
+  background-color: #7b68ee;
+}
+
+.green {
+  background-color: #5a9a5a;
+}
+
+.magenta {
+  background-color: #c06ec0;
+}
+
+.orange {
+  background-color: #d2913d;
+}
+
+.blue {
+  background-color: #4682b4;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-link {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: #3a9bbd;
+}
+
+.project-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .background {
+    height: 30%;
+  }
+
+  .profile-image-container {
+    margin-right: 0;
+    margin-bottom: -30px;
+    width: 350px;
+    height: 350px;
+  }
+
+  .about-container {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .background {
+    height: 15%;
+  }
+  .about-container {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .profile-image-container {
+    width: 100%;
+    height: 300px;
+  }
+
+  .profile-name {
+    font-size: 2.5rem;
+  }
+
+  .about-title,
+  .work-title {
+    font-size: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    position: static;
+    margin-top: 30px;
   }
 }

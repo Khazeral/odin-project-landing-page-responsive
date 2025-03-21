@@ -1,148 +1,161 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Williams - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <div id="photo-container">
-            <img src="pexels-2150164756-31074953.jpg" alt="">
-            <h2>Ashley Williams</h2>
-        </div>
+    <div class="background"></div>
 
-        <aside>
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-        </aside>
-    </header>
-
-    <main>
-        <h2>My work</h2>
-        <section id="projects-container">
-            <div class="project-card">
-                <div class="project-image purple">
-                    <span class="placeholder-text">screenshot of project</span>
-                </div>
-                <div class="project-details">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <p class="project-description">
-                    Short description of the project. Just a couple sentences will do.
-                </p>
+    <main class="container">
+        <section class="profile-section">
+            <div class="profile-image-container">
+                <img src="pexels-2150164756-31074953.jpg" alt="Ashley Williams" class="profile-image">
+                <h1 class="profile-name">Ashley Williams</h1>
             </div>
 
-            <div class="project-card">
-                <div class="project-image orange">
-                    <span class="placeholder-text">screenshot of project</span>
-                </div>
-                <div class="project-details">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <p class="project-description">
-                    Short description of the project. Just a couple sentences will do.
+            <div class="about-container">
+                <h2 class="about-title">About me</h2>
+                <p class="about-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.
                 </p>
-            </div>
-            <div class="project-card">
-                <div class="project-image purple">
-                    <span class="placeholder-text">screenshot of project</span>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="project-details">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <p class="project-description">
-                    Short description of the project. Just a couple sentences will do.
-                </p>
             </div>
+        </section>
 
-            <div class="project-card">
-                <div class="project-image orange">
-                    <span class="placeholder-text">screenshot of project</span>
-                </div>
-                <div class="project-details">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <p class="project-description">
-                    Short description of the project. Just a couple sentences will do.
-                </p>
-            </div>
+        <!-- Work Section -->
+        <section class="work-section">
+            <h2 class="work-title">My work</h2>
 
-            <div class="project-card">
-                <div class="project-image purple">
-                    <span class="placeholder-text">screenshot of project</span>
-                </div>
-                <div class="project-details">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image red">
+                        <span class="project-image-text">screenshot of project</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-name">Project name</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Short description of the project. Just a couple sentences will do.
+                        </p>
                     </div>
                 </div>
-                <p class="project-description">
-                    Short description of the project. Just a couple sentences will do.
-                </p>
-            </div>
 
-            <div class="project-card">
-                <div class="project-image orange">
-                    <span class="placeholder-text">screenshot of project</span>
-                </div>
-                <div class="project-details">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image purple">
+                        <span class="project-image-text">screenshot of project</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-name">Project name</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Short description of the project. Just a couple sentences will do.
+                        </p>
                     </div>
                 </div>
-                <p class="project-description">
-                    Short description of the project. Just a couple sentences will do.
-                </p>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image green">
+                        <span class="project-image-text">screenshot of project</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-name">Project name</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Short description of the project. Just a couple sentences will do.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image magenta">
+                        <span class="project-image-text">screenshot of project</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-name">Project name</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Short description of the project. Just a couple sentences will do.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image orange">
+                        <span class="project-image-text">screenshot of project</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-name">Project name</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Short description of the project. Just a couple sentences will do.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image blue">
+                        <span class="project-image-text">screenshot of project</span>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-header">
+                            <h3 class="project-name">Project name</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Short description of the project. Just a couple sentences will do.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Please get in touch if you want to work with me</p>
-            <div>
-                <p>1234 Randome Street</p>
-                <p>Random Town, in Kansas for sure</p>
-            </div>
-            <div><span></span><span>555-555-55555</span></div>
-            <div><span></span><span>great.email@trustme.com</span></div>
-            <div id="links">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </section>
-        <div>
-            <img src="pexels-2150164756-31074953.jpg" alt="">
-        </div>
-    </footer>
 </body>
 
 </html>
